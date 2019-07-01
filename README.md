@@ -8,44 +8,85 @@ Un arreglo es una coleccion de variables del mismo tipo, almacenadas en localida
 Para hacer referencia a un elemento particular del arreglo, se especifica el nombre del arreglo y el número de la posición relativa ocupada por el elemento en el arreglo entre corchetes [].
 
 Para declarar un arreglo de enteros llamado c de 12 elementos se usa la siguiente instrucción
+
+```cpp
 int c[12];
+```
+
 para asignar los valores iniciales de un arreglo se puede proceder de una de las dos formas indicadas a continuación:
 
 Se puede definir un arreglo inicializando sus valores, indicados entre llaves
-int c[12] = {0,3,4,5,10,9,12,9,11,3,2,1};
+
+```cpp
+int c1[tamanoArreglo] = {0, 3, 4, 5, 10, 7, 12, 9, 11, 3, 2, 1};
+```
+
 Si el tamaño del arreglo no se indica, al declarar un arreglo con la lista de inicialización, el número de elementos del arreglo será el número de elementos en dicha lista.
-int c[] = {0,3,4,5,10,9,12,9,11,3,2,1};
+
+```cpp
+int c2[] = {3, 5, 6, 2, 9, 6, 4, 9, 2, 6, 4, 8};
+```
 
 Los valores de un arreglo también se pueden inicializar mediante un ciclo for, de la siguiente manera:
 
-int i, c[12];
-for(i = 0; i < 12; i++)
-    c[i] = i * 2;
-
-El primer elemento de un arreglo está indicado por el índice cero (0).
-c[0]
-El cuarto elemento del arreglo se identifica de la siguiente manera
-c[3]
-El último elemento del arreglo se identifica
-c[número de elementos - 1]
+```cpp
+const int tamanoArreglo = 12;
+int c3[tamanoArreglo];
+for (int i= 0; i < tamanoArreglo; i++)
+	c3[i] = (i * 3) + 2;
+```
 
 Definiendo el tamaño del arreglo a través de una constante, hace el programa más escalable, al momento de modificar el número de elementos  no hace falta buscar todas las sentencias que hacen uso de dicho arreglo, solo hace falta modificar el valor de la constante que define su tamaño.
 
-const int tamanoArreglo = 12;
-int c[tamanoArreglo] = {0,3,4,5,10,9,12,9,11,3,2,1};
+El primer elemento de un arreglo está indicado por el índice cero (0).
+c[0];
+
+El cuarto elemento del arreglo se identifica de la siguiente manera
+c[3];
+
+El último elemento del arreglo se identifica
+c[número de elementos - 1];
 
 # Algoritmo que declara e inicializa un arreglo de enteros:
 
 Se incluyen las librerías necesarias
+
+```cpp
 #include <iostream>
+/*Directiva de preprocesador que le indica al compilador que agregue el contenido del archivo iostream
+este archivo debe incluirse en un programa que use las funciones para mostrar informacion en la pantalla o leer
+informacion del teclado*/
 
-Inicio del bloque principal
-int main(){
+/*Directiva usada para indicar que se van a usar las funciones de salida de datos por pantalla y 
+entrada de datos por teclado*/
+using std::cout;
+using std::cin;
+using std::endl;
+```
 
-Declaración de 
-    int i, c[12];
-    for(i = 0; i < 12; i++)
-        c[i] = i * 3;
-    for(i = 0; i < 12; i++)
-        cout << i << “ ” << c[i] << endl;
-}
+```cpp
+int main(){		// Inicio de la funcion principal
+```
+Se declara una constante que indica el tamaño de los arreglos para la escalabilidad del codigo
+Cuando se requiera modificar el tamaño del arreglo solo se debe modificar el valor de la constante
+
+```cpp
+const int tamanoArreglo = 12;
+```
+
+Se declaran arreglos de enteros de las diferentes formas posibles:
+
+```cpp
+// Se declara e inicializa el arreglo indicando el tamaño del mismo
+	int c1[tamanoArreglo] = {0, 3, 4, 5, 10, 7, 12, 9, 11, 3, 2, 1};
+
+// Se declara e inicializa el arreglo sin dinciar el tamaño
+	int c2[] = {3, 5, 6, 2, 9, 6, 4, 9, 2, 6, 4, 8};
+
+// Se declara el arreglo y se asignan posteriormente los valores a cada variable
+	int c3[tamanoArreglo];
+
+// Inicializacion del arreglo c3 con la asignacion de valores a cada variable del arreglo individualmente
+	for (int i= 0; i < tamanoArreglo; i++)
+		c3[i] = (i * 3) + 2;
+```
