@@ -2,7 +2,9 @@
 
 Un importante tópico de la estructura de datos son los arreglos, los cuales consisten en datos relacionados del mismo tipo.
 Los arreglos son entidades estáticas que mantienen el mismo tamaño con el cual fueron definidos, a lo largo de la ejecución el programa.
-Un arreglo es un grupo consecutivo de localidades de memoria  mismo tipo.
+
+Un arreglo es una coleccion de variables del mismo tipo, almacenadas en localidades consecutivas de memoria, que se referencia a través de un nombre común a todas ellas. La dirección de memoria mas baja corresponde al primer elemento del arreglo, mientras la dirección mas alta corresponde al último elemento.
+
 Para hacer referencia a un elemento particular del arreglo, se especifica el nombre del arreglo y el número de la posición relativa ocupada por el elemento en el arreglo entre corchetes [].
 
 Para declarar un arreglo de enteros llamado c de 12 elementos se usa la siguiente instrucción
