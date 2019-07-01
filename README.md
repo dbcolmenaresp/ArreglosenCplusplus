@@ -90,14 +90,19 @@ Se declaran arreglos de enteros de las diferentes formas posibles:
 	for (int i= 0; i < tamanoArreglo; i++)
 		c3[i] = (i * 3) + 2;
 ```
+
+# Paso de arreglos a funciones
+
 En vista que se repite el procedimiento para mostrar los valores de los arreglos en pantalla, se procedió a estructurar el código, definiendo una funcion que recibe como parámetro el arreglo a mostrar y el tamaño del mismo.
 
-En el lenguaje de programacion C no se puede pasar como parámetro a una funcion un arreglo completo. Para pasar un arreglo como parámetro a una función, se pasa un puntero a un arreglo especificando el nombre del arreglo sin indice
+En el lenguaje de programacion C no se puede pasar como parámetro a una funcion un arreglo completo. Para pasar un arreglo como parámetro a una función, se pasa un puntero a un arreglo, especificado por el nombre del arreglo sin indice
 
 ```cpp
 mostrarArreglo(c1, tamanoArreglo);
 ```
-La funcion que se encarga de mostrar en pantalla los valores del arreglo recibido como parametro queda de la siguiente manera
+
+La funcion recibe como parametro un apuntador al primer elemento del arreglo y que se encarga de mostrar en pantalla los valores del arreglo recibido como parametro
+
 ```cpp
 void mostrarArreglo(int c[], int t){
 	cout << "Valores \n" << endl;
@@ -111,7 +116,9 @@ void mostrarArreglo(int c[], int t){
 Schildt, H. (1995). C++. Manual de referencia. Serie McGraw-Hill de informática.
 
 Lista de reproduccion de estructuras de datos con C++
+
 https://www.youtube.com/playlist?list=PLCZKC1YTwC0kAOKcri-_8WBdIkP5FtGC_
 
 Deitel y Deitel. Cómo programar C++. Sexta edición
+
 https://drive.google.com/open?id=1yWPwF7v5D2_9G9QRtwKMFubM9iE5g-cq
