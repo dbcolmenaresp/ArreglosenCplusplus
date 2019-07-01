@@ -1,6 +1,6 @@
 # Uso de arreglos en el lenguaje de programacion C++
 
-Un importante tópico de la estructura de datos son los arreglos, los cuales consisten en datos relacionados del mismo tipo.
+Un importante tópico de la [estructura de datos](https://es.wikipedia.org/wiki/Estructura_de_datos) son los arreglos, los cuales consisten en datos relacionados del mismo tipo.
 Los arreglos son entidades estáticas que mantienen el mismo tamaño con el cual fueron definidos, a lo largo de la ejecución el programa.
 
 Un arreglo es una coleccion de variables del mismo tipo, almacenadas en localidades consecutivas de memoria, que se referencia a través de un nombre común a todas ellas. La dirección de memoria mas baja corresponde al primer elemento del arreglo, mientras la dirección mas alta corresponde al último elemento.
