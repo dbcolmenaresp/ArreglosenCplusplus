@@ -5,6 +5,14 @@ Los arreglos son entidades estáticas que mantienen el mismo tamaño con el cual
 
 Un arreglo es una coleccion de variables del mismo tipo, almacenadas en localidades consecutivas de memoria, que se referencia a través de un nombre común a todas ellas. La dirección de memoria mas baja corresponde al primer elemento del arreglo, mientras la dirección mas alta corresponde al último elemento.
 
+Los arreglos son estructuras de datos de tipo estático lineal, estático porque el tamaño de la estructura, es decir, el número de elementos que puede almacenar, se encuentra definido desde el principio del programa, y lineal porque los elementos se encuentran almacenados en una misma zona de memoria, unos a continuación de otros.
+
+El uso de arreglos para almacenar datos se recomienda en casos en los cuales el número de elementos que se va a manejar es pequeño o se encuentra bien definido desde el inicio de la ejecución del programa.
+
+La principal ventaja del uso de arreglos como estructura de datos es su fácil implementación y manejo, su declaración es similar a la de los tipos de datos básicos y su manipulación se limita al manejo del índice del mismo para el recorrido o la ubicación de un elemento especifico.
+
+La desventaja se presenta en los casos en que se maneja gran cantidad de datos y no se tiene bien definido de antemano el número de elementos que se va a almacenar, si se reserva una cantidad grande de memoria para el arreglo y solo se usa una cantidad pequeña, dejando una cantidad de memoria reservada sin usar, en este caso se está haciendo una mala gestión de la memoria, o se puede presentar el caso que la cantidad de memoria reservada para el arreglo sea muy pequeña en un momento dado y no se puedan almacenar todos los datos requeridos.
+
 Para hacer referencia a un elemento particular del arreglo, se especifica el nombre del arreglo y el número de la posición relativa ocupada por el elemento en el arreglo entre corchetes [].
 
 Para declarar un arreglo de enteros llamado c de 12 elementos se usa la siguiente instrucción
@@ -115,10 +123,10 @@ void mostrarArreglo(int c[], int t){
 
 Schildt, H. (1995). C++. Manual de referencia. Serie McGraw-Hill de informática.
 
-Lista de reproduccion de estructuras de datos con C++
+Lista de reproduccion de estructuras de datos con C++  
 
 https://www.youtube.com/playlist?list=PLCZKC1YTwC0kAOKcri-_8WBdIkP5FtGC_
 
-Deitel y Deitel. Cómo programar C++. Sexta edición
+Deitel y Deitel. Cómo programar C++. Sexta edición  
 
 https://drive.google.com/open?id=1yWPwF7v5D2_9G9QRtwKMFubM9iE5g-cq
