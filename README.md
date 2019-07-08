@@ -131,7 +131,7 @@ Deitel y Deitel. Cómo programar C++. Sexta edición
 
 https://drive.google.com/open?id=1yWPwF7v5D2_9G9QRtwKMFubM9iE5g-cq
 
-Video sobre arreglos unidimensionales en C++
+Video sobre arreglos unidimensionales en C++  
 [![Video de arreglos unidimensionales en C++](https://img.youtube.com/vi/l-kOjxvgyDQ/0.jpg)](https://www.youtube.com/watch?v=l-kOjxvgyDQ)
 
 Lista de reproduccion sobre estructuras de datos con el lenguaje de programacion C++
